@@ -81,11 +81,11 @@
       </div>
       <div>
             <label for ="password"> Password:</label>
-            <input type="password" placeholder = "Password" id="password"/>
+            <input type="password" placeholder = "Password" pattern=.{6,} id="password" title= "at least 6 charcters"/>
       </div>
       <div>
         <label for ="email"> Email:</label>
-        <input type="text" placeholder = "email"id="email" required autofocus/>
+        <input type="email" placeholder = "email" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title= "must be in example@email.com" id="email" required autofocus/>
       </div>
       <div>
         <label for="website">Website:</label>
@@ -93,8 +93,29 @@
 
    <div>
          <label for = "telephone">Telephone:</label>
-         <input type="text" placeholder = "teleophone"  id=""phone>
+         <input type="text" placeholder = "teleophone"  id="phone">
    </div>     
+      
+   <div>
+         <label for ="age">Age:</label>
+         <input type="number" placeholder = "Age" id="age" min ="0" max="99" title= "Sorry to old mate">
+   </div>
+   <div>
+         <label for ="credit_card">Credit Card:</label>
+         <input type="text" placeholder = "CreditCard No."  id="Credit">
+   </div>
+   <div>
+      <label for ="lunch">What would you like for lunch?</label><br/>
+         <input type="radio" name = "Lunch" value = "Ham"/>Ham<br />
+         <input type="radio" name = "Lunch" value = "Chicken"/>Chicken</br>
+         <input type="radio" name = "Lunch" value = "Veggie"/>Veggie<br>
+
+   </div>
+   <div>
+      <label for ="gender">Male or Female?</label><br/>
+         <input type="radio" name = "Gender" value ="Male"/>Male<br/>
+         <input type="radio" name = "Gender" value ="Female"/>Female<br/>
+   </div>
       <button>Submit</button>
       </fieldset>
       </form>
